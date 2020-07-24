@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/FrontEndSchool/static/css/main.cd7075c4.chunk.css",
+    "main.js": "/FrontEndSchool/static/js/main.7222d774.chunk.js",
+    "main.js.map": "/FrontEndSchool/static/js/main.7222d774.chunk.js.map",
+    "runtime-main.js": "/FrontEndSchool/static/js/runtime-main.43fcd551.js",
+    "runtime-main.js.map": "/FrontEndSchool/static/js/runtime-main.43fcd551.js.map",
+    "static/js/2.12e67188.chunk.js": "/FrontEndSchool/static/js/2.12e67188.chunk.js",
+    "static/js/2.12e67188.chunk.js.map": "/FrontEndSchool/static/js/2.12e67188.chunk.js.map",
+    "index.html": "/FrontEndSchool/index.html",
+    "precache-manifest.d66c8100adb87b484af1de9c24a70690.js": "/FrontEndSchool/precache-manifest.d66c8100adb87b484af1de9c24a70690.js",
+    "service-worker.js": "/FrontEndSchool/service-worker.js",
+    "static/css/main.cd7075c4.chunk.css.map": "/FrontEndSchool/static/css/main.cd7075c4.chunk.css.map",
+    "static/js/2.12e67188.chunk.js.LICENSE.txt": "/FrontEndSchool/static/js/2.12e67188.chunk.js.LICENSE.txt",
+    "static/media/about.jpg": "/FrontEndSchool/static/media/about.9ca2e6ae.jpg",
+    "static/media/app.css": "/FrontEndSchool/static/media/hero-bg.116fddc0.jpg",
+    "static/media/trainer-1.jpg": "/FrontEndSchool/static/media/trainer-1.6199a2ce.jpg",
+    "static/media/trainer-2.jpg": "/FrontEndSchool/static/media/trainer-2.2451fb86.jpg",
+    "static/media/trainer-3.jpg": "/FrontEndSchool/static/media/trainer-3.2d391370.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.43fcd551.js",
+    "static/js/2.12e67188.chunk.js",
+    "static/css/main.cd7075c4.chunk.css",
+    "static/js/main.7222d774.chunk.js"
+  ]
+}
