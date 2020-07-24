@@ -8,31 +8,31 @@ export default function ContactSection() {
         <h2>Contact</h2>
         <p>Contact Us</p>
       </div>
-      <div class="row">
+      <div className="row">
 
-          <div class="col-lg-4">
+          <div className="col-lg-4">
             <Fade left duration={1000}>
-            <div class="info h-100 d-flex flex-column justify-content-around">
-              <div class="address d-flex  align-items-center">
-                <i class="icofont-google-map"></i>
+            <div className="info h-100 d-flex flex-column justify-content-around">
+              <div className="address d-flex  align-items-center">
+                <i className="fa fa-map text-success text-bold"></i>
                 <div className='ml-3'>
-                <h4>Location:</h4>
+                <h4 className='font-weight-bold'>Location:</h4>
                 <p>A108 Adam Street, New York, NY 535022</p>
                 </div>
               </div>
 
-              <div class="email d-flex  align-items-center">
-                <i class="icofont-envelope"></i>
+              <div className="email d-flex  align-items-center">
+                <i className="fa fa-envelope text-success"></i>
                 <div className='ml-3'>
-                <h4>Email:</h4>
+                <h4 className='font-weight-bold'>Email:</h4>
                 <p>info@example.com</p>
                 </div>
               </div>
 
-              <div class="phone d-flex  align-items-center">
-                <i class="icofont-phone"></i>
+              <div className="phone d-flex  align-items-center">
+                <i className="fa fa-phone text-success"></i>
                 <div className='ml-3'>
-                <h4>Call:</h4>
+                <h4 className='font-weight-bold'>Call:</h4>
                 <p>+1 5589 55488 55s</p>
                 </div>
               </div>
@@ -41,7 +41,7 @@ export default function ContactSection() {
 </Fade>
           </div>
 
-          <div class="col-lg-8 mt-5 mt-lg-0">
+          <div className="col-lg-8 mt-5 mt-lg-0">
             <Fade right duration={1000}>
 <ContactForm/>     
 </Fade>    

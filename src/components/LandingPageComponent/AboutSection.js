@@ -23,9 +23,9 @@ export default function AboutSection() {
           magna aliqua.
         </p>
         <ul>
-          <li><i className="icofont-check-circled" /> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-          <li><i className="icofont-check-circled" /> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-          <li><i className="icofont-check-circled" /> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+          <li><i className="fa fa-check" /> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+          <li><i className="fa fa-check" /> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+          <li><i className="fa fa-check" /> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
         </ul>
         <p>
           Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function NavBar() {
  
@@ -28,7 +29,7 @@ export default function NavBar() {
      
      
     </ul>
-    <button className="btn btn-success btn-nav rounded-pill">Get Started</button>
+    <Link to='/login' className="btn btn-success btn-nav rounded-pill">Login</Link>
   </div>
   </div>
 </nav>

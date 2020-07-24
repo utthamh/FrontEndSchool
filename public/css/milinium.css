@@ -538,7 +538,7 @@ body {
   padding-bottom: 55px;
 }
 .sidebar .sidebar-wrapper .scroll-element.scroll-y,
-.sidebar[data-background-color="white"]
+.sidebar[data-background+-color="white"]
   .sidebar-wrapper
   .scroll-element.scroll-y {
   top: 5px !important;

@@ -1,11 +1,11 @@
 import React from 'react';
-import LandingPage from './pages/LandingPage'
+import MyRoutes from './routes'
 import './app.css';
-import './Icofonts.css';
+
 function App() {
   return (
     <div className="App">
-     <LandingPage/>
+     <MyRoutes/>
     </div>
   );
 }

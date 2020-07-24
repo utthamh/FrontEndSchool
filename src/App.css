@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Open Sans',sans-serif;
     background: #f8f8f8;
@@ -28,7 +31,7 @@ a{
     background: transparent !important;
     color:  #666 !important;
 }
-.navbar .navbar-nav .nav-item.active .nav-link {
+.navbar .navbar-nav .nav-item.active >a {
     background: transparent !important;
     color: #35cd3a !important;
 }
@@ -87,6 +90,15 @@ a{
     background-color:  #35cd3a;
     border: 2px solid  #35cd3a;
     color: #fff;
+}
+/* about */
+.about ul{
+    list-style: none;
+    padding: 0;
+}
+.about ul i{
+    color: #3ac162;
+    margin-right: 0.5rem;
 }
 /* section */
 section {
@@ -186,4 +198,18 @@ section {
 .myfooter a:hover{
 
     color:#6666 !important;
+}
+/* social icon */
+.social i{
+    padding: 4px;
+   /* border: 1px solid #666; */
+    margin-left: 3x;
+    color: #35cd3a
+}
+.social i:hover{
+    padding: 4px;
+   /* border: 1px solid #666; */
+    margin-left: 3x;
+    background-color: #35cd3a;
+    color: #fff;
 }

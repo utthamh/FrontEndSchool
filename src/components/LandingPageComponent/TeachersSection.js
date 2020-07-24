@@ -21,13 +21,13 @@ export default function TeachersSection() {
         <h4>Walter White</h4>
         <span>Web Development</span>
         <p>
-          Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
+         Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
         </p>
         <div className="social">
-          <a href><i className="icofont-twitter" /></a>
-          <a href><i className="icofont-facebook" /></a>
-          <a href><i className="icofont-instagram" /></a>
-          <a href><i className="icofont-linkedin" /></a>
+          <a href><i className="fa fa-twitter" /></a>
+          <a href><i className="fa fa-facebook" /></a>
+          <a href><i className="fa fa-instagram" /></a>
+          <a href><i className="fa fa-linkedin" /></a>
         </div>
       </div>
     </div>
@@ -44,10 +44,10 @@ export default function TeachersSection() {
           Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
         </p>
         <div className="social">
-          <a href><i className="icofont-twitter" /></a>
-          <a href><i className="icofont-facebook" /></a>
-          <a href><i className="icofont-instagram" /></a>
-          <a href><i className="icofont-linkedin" /></a>
+          <a href><i className="fa fa-twitter" /></a>
+          <a href><i className="fa fa-facebook" /></a>
+          <a href><i className="fa fa-instagram" /></a>
+          <a href><i className="fa fa-linkedin" /></a>
         </div>
       </div>
     </div>
@@ -64,10 +64,10 @@ export default function TeachersSection() {
           Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
         </p>
         <div className="social">
-          <a href><i className="icofont-twitter" /></a>
-          <a href><i className="icofont-facebook" /></a>
-          <a href><i className="icofont-instagram" /></a>
-          <a href><i className="icofont-linkedin" /></a>
+          <a href><i className="fa fa-twitter" /></a>
+          <a href><i className="fa fa-facebook" /></a>
+          <a href><i className="fa fa-instagram" /></a>
+          <a href><i className="fa fa-linkedin" /></a>
         </div>
       </div>
     </div>
