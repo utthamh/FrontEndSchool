@@ -17,16 +17,16 @@ export default function NavBar() {
   <div className="collapse navbar-collapse" id="collapsibleNavId">
     <ul className="navbar-nav  ml-auto mt-2 mt-lg-0">
       <li className="nav-item active">
-        <a className="nav-link" href="/#hero">Home <span className="sr-only">(current)</span></a>
+        <a className="nav-link" href="#hero">Home <span className="sr-only">(current)</span></a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="/#about">About</a>
+        <a className="nav-link" href="#about">About</a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="/#teacher">Teacher</a>
+        <a className="nav-link" href="#teacher">Teacher</a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="/#contact">Contact</a>
+        <a className="nav-link" href="#contact">Contact</a>
       </li>
      
      
