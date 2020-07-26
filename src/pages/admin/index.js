@@ -1,9 +1,11 @@
 import React from 'react'
+import NavBar from '../../components/Dashboard/NavBar'
+import SideBar from '../../components/Dashboard/SideBar'
 
 export default function index() {
-    return (
-        <div>
-           Hi admin 
-        </div>
+    return (<>
+    <NavBar/>
+    <SideBar/>
+    </>
     )
 }
