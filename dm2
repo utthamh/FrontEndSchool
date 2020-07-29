@@ -1,0 +1,111 @@
+import React,{useState} from 'react'
+import {
+  Alert,
+  Modal,
+  StyleSheet,
+  Text,
+  TouchableHighlight,
+  ScrollView,
+  View
+} from "react-native";
+
+export default ModalPicker = ({data,placeholder,value,onchange}) => {
+  const [modalVisible, setModalVisible] = useState(false);
+  return (
+    <>
+    <TouchableHighlight style={styles.openButton} onPress={()=>{setModalVisible(true)}} underlayColor={'#f1f1f1'}>
+    <View style={styles.btntext}>
+    <Text>{value||placeholder||'Select'}</Text>
+    <Text style={styles.rotate}>></Text>
+    </View>
+    </TouchableHighlight>
+    <Modal visible={modalVisible} transparent={true}>
+    <View style={styles.modalView}>
+    <View style={{flexDirection:'row',justifyContent:'space-between',padding:10,borderColor:'#f1f1f1',
+borderWidth:2}}>
+     <Text>{placeholder || 'Select'}</Text>
+      <TouchableHighlight onPress={()=>setModalVisible(false)}><Text>Cancel</Text></TouchableHighlight>
+    </View>
+    <ScrollView>
+    {
+      data && data.length>0 && data.map(item=>
+       <TouchableHighlight onPress={()=>{onchange(item.value);setModalVisible(false)}}><Text style={{padding:10,textAlign:'center',borderBottomColor:'#f1f1f1',borderBottomWidth:1}}>{item.label}</Text></TouchableHighlight>
+      )
+      ||
+      <Text style={{padding:10,textAlign:'center',}}>No item</Text>
+    }
+   
+    
+    
+    
+    
+    
+    
+    
+    </ScrollView>
+   
+    </View>
+    </Modal>
+    </>
+  );
+};
+
+const styles = StyleSheet.create({
+  modalView:{
+    flex:1,
+    
+position:'absolute',
+height:'50%',
+width:'100%',
+bottom:0,
+borderColor:'#f1f1f1',
+borderWidth:2
+  },
+  centeredView: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 22,
+    width:'100%'
+  },
+  rotate:{
+transform: [{ rotate: "90deg" }],
+  },
+  btntext:{
+ flexDirection:'row',
+  justifyContent:"space-between",
+  },
+  openButton: {
+   
+    marginVertical:10,
+    backgroundColor: "#F194FF",
+   // borderRadius: 20,
+   
+    padding: 10,
+    elevation: 2
+  },
+  textStyle: {
+    color: "white",
+    fontWeight: "bold",
+    textAlign: "center"
+  },
+  modalText: {
+    flex:1,
+    justifyContent:'center',
+    alignItems:'center',
+    paddingVertical:10,
+    textAlign:'center',
+    borderBottomWidth :1,
+    borderBottomColor: '#f0f0f0',
+    
+
+  },
+  scrollcontainer:{
+    width:'100%',
+     bottom:20,
+    left:20,
+    flex:1,
+    height:'100%'
+  }
+  
+});

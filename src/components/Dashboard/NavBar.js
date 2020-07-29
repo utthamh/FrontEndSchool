@@ -2,28 +2,26 @@ import React from 'react'
 import Img from '../../images/trainer-1.jpg'
 export default function Navbar() {
     return (
-<div className="main-header">
+<div className="main-header" >
   {/* Logo Header */}
-  <div className="logo-header" data-background-color="purple">
-    <a href="index-2.html" className="logo text-white font-weight-bold">
-      <div>DashBoard</div>
-    
-    </a>
-    <button className="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon">
-        <i className="fa fa-bars" />
-      </span>
-    </button>
-    <button className="topbar-toggler more"><i className="icon-options-vertical" /></button>
-    <div className="nav-toggle">
-      <button className="btn btn-toggle toggle-sidebar">
-        <i className="fa fa-bars" />
-      </button>
-    </div>
+<div className="logo-header" data-background-color="dark2">
+  <a href="#" className="logo">
+    Logo
+  </a>
+  <button className="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon">
+      <i className="fa fa-bars" />
+    </span>
+  </button>
+  <button class="topbar-toggler more toggled"><i class="fa fa-bars"></i></button>
+  <div className="nav-toggle">
+    <button className="btn btn-toggle toggle-sidebar "><i className="fa fa-bars" /></button>
   </div>
+</div>
+
   {/* End Logo Header */}
   {/* Navbar Header */}
-  <nav className="navbar navbar-header navbar-expand-lg" data-background-color="purple2">
+  <nav className="navbar navbar-header navbar-expand-lg" data-background-color="dark2">
     <div className="container-fluid">
       <div className="collapse" id="search-nav">
         <form className="navbar-left navbar-form nav-search mr-md-3">

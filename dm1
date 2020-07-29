@@ -1,0 +1,128 @@
+import React from 'react'
+import ModalPicker from './ModalPicker'
+const mypost=async(data)=>{
+console.log(data)
+//https://cors-anywhere.herokuapp.com/
+  const response = await fetch('https://fundwastewebapi.azurewebsites.net/api/ProductCatalogFilter/Post', {
+method:'POST',
+headers:{ 'Content-Type': 'application/json','Access-Control-Allow-Origin':'*'},
+body: JSON.stringify(data)
+}); 
+             return await response.json();
+             }
+export default App = () => {
+   const [loding,setloding]=React.useState(true);
+        const [productbrand,setproductbrand]=React.useState([])
+        const [productcat,setproductcat]=React.useState([])
+        const [producttype,setproducttype]=React.useState([])
+        const [product,setproduct]=React.useState([])
+    const [data,setdata]=React.useState({
+      product:'',
+          productbrand:'',
+          productcategory: '',
+          producttype: '',
+          filtertype: 'productbrand',
+          response: "1"
+        
+    })
+    const productBrandChange=(value)=>{
+  setloding(true)
+  if(value==''){setproductcat([]);
+  setdata({productbrand:'',
+          productcategory: '',
+          producttype: '',
+          product:'',
+          filtertype: 'productbrand',
+          response: "1"});
+           setloding(false)
+  }
+ else{
+    const mydata={...data,productbrand:value,filtertype:'productcategory'}
+  //setproductbrand(value);
+  setdata(mydata);
+  mypost(mydata).then(res=>setproductcat(res));
+  setloding(false)
+ }
+ 
+  
+ setproducttype([]);setproduct([]);
+} 
+
+const productcategorychange=(value)=>{
+  setloding(true)
+  if(value==''){setproducttype([]);
+   setloding(false)
+  }
+ else{
+    const mydata={...data,productcategory:value,filtertype:'producttype'}
+  //setproductbrand(value);
+  setdata(mydata);
+  mypost(mydata).then(res=>setproducttype(res));
+   setloding(false)
+ }
+ 
+ setproduct([]);
+} 
+
+const producttypeChange=(value)=>{
+  setloding(true)
+  if(value==''){setproduct([]);
+  setloding(false)
+  }
+ else{
+    const mydata={...data,product:'',producttype:value,filtertype:'productsubtype'}
+  //setproductbrand(value);
+  //alert(JSON.stringify(mydata))
+  setdata(mydata);
+  mypost(mydata).then(res=>setproduct((res)));
+   setloding(false)
+ }
+ 
+} 
+
+const productChange=(value)=>{
+  setloding(true)
+  if(value==''){
+  setloding(false)
+  }
+ else{
+    const mydata={...data,product:value,filtertype:'productsubtype'}
+  //setproductbrand(value);
+  
+  setdata(mydata);
+  setloding(false);
+ }
+ 
+} 
+
+
+    React.useEffect(()=>{
+mypost(data).then(res=>{setproductbrand(res); 
+ setloding(false);
+ //alert('false')
+}).catch(e=>{})
+    },[])
+  
+  return (<>
+    <ModalPicker data={productbrand} 
+    onchange={productBrandChange}
+    value={data.productbrand}
+    placeholder='select product brand'
+    />
+    <ModalPicker data={productcat}
+    onchange={productcategorychange}
+    value={data.productcategory}
+    placeholder='select product Category'
+    />
+    <ModalPicker data={producttype}
+    onchange={producttypeChange}
+    value={data.producttype}
+    placeholder='select product Type'/>
+    <ModalPicker data={product}
+    onchange={productChange}
+    value={data.product}
+    placeholder='select product '
+    />
+    </>
+  )
+}
