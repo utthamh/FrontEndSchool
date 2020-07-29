@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function LoginForm() {
     const [show,setshow]=React.useState(false)
@@ -34,7 +35,7 @@ export default function LoginForm() {
         <div className="row form-action">
          
           <div className="col-md-12">
-            <a href="#" className="btn btn-success w-100 fw-bold">Login</a>
+            <Link to='/admin' className="btn btn-success w-100 fw-bold">Login</Link>
           </div>
         </div>
       </div>        
