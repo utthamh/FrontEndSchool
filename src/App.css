@@ -4,6 +4,10 @@ html{
 body{
     font-family: 'Open Sans',sans-serif;
     background: #f8f8f8;
+    color:rgb(23,43,77) !important
+}
+label,.card-title{
+    color:rgb(23,43,77) !important
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;
@@ -258,4 +262,16 @@ section {
             font-size: 17px !important;
       
     }
+}
+@media (min-width: 992px){
+.modal-xl {
+    background-color: #FFFFFF;
+   
+    min-width: 80%;
+    max-width: 80%;
+    padding: 0;
+    margin:auto;
+    margin-top: 60px;
+    border-radius: 20%;
+}
 }

@@ -10,7 +10,7 @@ export default function NavBar() {
 
 <nav className="navbar navbar-expand-md navbar-light bg-white  fixed-top shadow-sm">
 <div class="container">
-  <a className="navbar-brand" href="#">International School</a>
+  <a className="navbar-brand" href="/">International School</a>
   <button className="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation" >
     <i className='fa fa-bars'/>
   </button>

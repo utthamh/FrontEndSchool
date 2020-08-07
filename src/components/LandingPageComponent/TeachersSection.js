@@ -16,7 +16,7 @@ export default function TeachersSection() {
   <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
   <Zoom duration={1000}>
     <div className="member">
-      <img src={trainer1} className="img-fluid" alt />
+      <img src={trainer1} className="img-fluid" alt='' />
       <div className="member-content">
         <h4>Walter White</h4>
         <span>Web Development</span>
@@ -24,10 +24,10 @@ export default function TeachersSection() {
          Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
         </p>
         <div className="social">
-          <a href><i className="fa fa-twitter" /></a>
-          <a href><i className="fa fa-facebook" /></a>
-          <a href><i className="fa fa-instagram" /></a>
-          <a href><i className="fa fa-linkedin" /></a>
+          <a href=''><i className="fa fa-twitter" /></a>
+          <a href=''><i className="fa fa-facebook" /></a>
+          <a href=''><i className="fa fa-instagram" /></a>
+          <a href=''><i className="fa fa-linkedin" /></a>
         </div>
       </div>
     </div>

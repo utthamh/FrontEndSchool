@@ -1,17 +1,20 @@
 import React from 'react'
 import SidebarSubMenu from './SidebarSubMenu'
+import { Link } from 'react-router-dom'
 
-export default function SidebarListItem({name,icon,submenu}) {
+export default function SidebarListItem({name,icon,submenu,link}) {
     return (
         <li className="nav-item">
-        <a data-toggle="collapse" href={'#'+name}>
+      {submenu && submenu.length>0 && <> <a data-toggle="collapse" href={'#'+name}>
           <i className={icon} />
           <p>{name}</p>
-          {submenu && submenu.length>0 && <span className="caret" />}
+           <span className="caret" />
         </a>
-        {submenu && submenu.length>0 &&
-            <SidebarSubMenu name={name} submenu={submenu}/>
-            
+        
+            <SidebarSubMenu name={name} submenu={submenu}/></>
+            ||
+            <Link to={link}><i className={icon} />
+            <p>{name}</p></Link>
             }
       </li>
     )

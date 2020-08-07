@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function SidebarSubMenu({name,submenu}) {
     return (
@@ -6,9 +7,9 @@ export default function SidebarSubMenu({name,submenu}) {
         <ul className="nav nav-collapse">
             {
                 submenu.map(item=> <li>
-                    <a href="components/avatars.html">
+                    <Link to={item.link}>
                 <span className="sub-item">{item.name}</span>
-                    </a>
+                    </Link>
                   </li>)
             }
          
